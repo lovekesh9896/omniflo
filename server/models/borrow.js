@@ -1,28 +1,26 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const User = new Schema(
+const Borrow = new Schema(
 	{
-		name: {
+		amount: {
 			type: String,
 			required: true,
 		},
-		gender: {
+		reason: {
 			type: String,
 			required: true,
 		},
-		mobileNumber: {
+		duration: {
 			type: String,
 			required: true,
 		},
-		borrowRequest: [
-			{
-				type: mongoose.Schema.Types.ObjectId,
-				ref: "borrows",
-			},
-		],
+		user: {
+			type: mongoose.Schema.Types.ObjectId,
+			ref: "user",
+		},
 	},
 	{ timestamps: true }
 );
 
-module.exports = mongoose.model("users", User);
+module.exports = mongoose.model("borrows", Borrow);

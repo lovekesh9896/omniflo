@@ -1,0 +1,54 @@
+.borrow {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 60px 6vw;
+}
+
+.borrow h3 {
+	margin-bottom: 10px;
+}
+
+.borrow ul {
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.borrow button {
+	border: none;
+	outline: none;
+	color: white;
+	font-size: 1.2rem;
+	background-color: tomato;
+	padding: 10px 20px;
+	border-radius: 8px;
+	margin-top: 20px;
+}
+
+.borrow > div {
+	width: 40vw;
+}
+
+.borrow-left img {
+	width: 100%;
+}
+
+.borrow-right {
+	background-color: aquamarine;
+	padding: 30px 30px;
+	border-radius: 8px;
+}
+
+.borrow-right form {
+	display: flex;
+	flex-direction: column;
+}
+
+.borrow-right input {
+	margin-top: 30px;
+	height: 40px;
+	border-radius: 8px;
+	border: none;
+	outline: none;
+	padding-left: 20px;
+}

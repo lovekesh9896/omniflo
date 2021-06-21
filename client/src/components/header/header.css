@@ -1,0 +1,35 @@
+.header {
+	width: 100%;
+	padding: 20px 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header ul {
+	display: flex;
+	list-style: none;
+	align-items: center;
+}
+
+a {
+	text-decoration: none;
+	margin-right: 30px;
+	color: black;
+}
+
+.logo-container {
+	font-size: xx-large;
+}
+
+.header-highlight {
+	background-color: tomato;
+	padding: 10px 14px;
+	border-radius: 8px;
+}
+
+.header-highlight a {
+	color: white;
+	margin: auto;
+	font-size: large;
+}

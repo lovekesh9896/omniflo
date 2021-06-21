@@ -1,0 +1,75 @@
+.landing {
+	width: 100%;
+	margin-top: 80px;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 100px;
+}
+
+.landing > div {
+	width: 40vw;
+}
+
+.landing-left h3 {
+	font-weight: 300;
+	color: grey;
+	margin-top: 30px;
+}
+
+.landing-left button {
+	background-color: tomato;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 30px;
+	border-radius: 8px;
+	font-size: 1.4rem;
+	margin-top: 60px;
+}
+
+/* landing right */
+.landing-right {
+	background-color: aquamarine;
+	padding: 30px 30px;
+	border-radius: 8px;
+}
+
+.landing-right form {
+	display: flex;
+	flex-direction: column;
+}
+
+.sign-in-form input {
+	margin-top: 30px;
+	height: 40px;
+	border-radius: 8px;
+	border: none;
+	outline: none;
+	padding-left: 20px;
+}
+
+.sign-in-form button {
+	height: 40px;
+	font-size: 1rem;
+	border-radius: 8px;
+	outline: none;
+	border: none;
+	border-radius: 8px;
+	color: tomato;
+	width: 50%;
+	font-weight: 700;
+	margin-top: 20px;
+}
+
+.landing-right > div {
+	margin-top: 40px;
+}
+
+.change-login {
+	outline: none;
+	border: none;
+	background: transparent;
+	text-decoration: underline;
+	margin: 0 4px;
+	cursor: pointer;
+}

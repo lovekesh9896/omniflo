@@ -35,9 +35,9 @@ function BorrowScreen({ user }) {
 		apis.borrowRequest(obj)
 			.then((res) => {
 				console.log(res);
+				document.getElementById("request-btn").disabled = true;
 				document.getElementById("request-btn").innerText =
 					"Request Added Successfully";
-
 				setCurrBorrowRequest([...currBorrowRequest, obj]);
 			})
 			.catch((err) => {

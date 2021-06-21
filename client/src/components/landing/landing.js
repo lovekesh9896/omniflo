@@ -1,9 +1,11 @@
 import "./landing.css";
 import apis from "../../API/API";
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 function Landing({ setUser }) {
 	let [signUpForm, setSignupForm] = useState(true);
+	const history = useHistory();
 
 	function userSignUpHandler(event) {
 		event.preventDefault();
@@ -35,6 +37,7 @@ function Landing({ setUser }) {
 			.then((res) => {
 				console.log(res);
 				setUser(res.data.data);
+				history.push("/console");
 			})
 			.catch((err) => {
 				console.log(err);
